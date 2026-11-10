@@ -35,8 +35,7 @@ Thiết bị phân tích và giám sát chất lượng nước
 * **Bước 3: Xử lý tín hiệu DFT và thu thập dữ liệu**
   * Tại mỗi bước tần số trong dải quét, mạch tích hợp thực hiện lấy mẫu tín hiệu và tính toán thuật toán DFT để bóc tách ra hai thành phần: Phần thực và Phần ảo của tổng trở phức.
   * Cùng lúc đó, cảm biến DS18B20 đo chính xác nhiệt độ của mẫu nước tại thời điểm đó.
-* **Bước 4: Bù nhiệt và đóng gói dữ liệu**
-  ESP32 đọc các giá trị thực (Real), ảo (Imaginary) và nhiệt độ từ cảm biến. Vi điều khiển thực hiện các phép tính toán học để xác định biên độ tổng trở phức |Z| = sqrt(Real^2 + Imaginary^2) và góc pha theta = arctan(Imaginary / Real), đồng thời áp dụng hệ số hồi quy tuyến tính để bù trừ triệt để sai số do sự thay đổi nhiệt độ nước gây ra.
+* * **Bước 4: Bù nhiệt và đóng gói dữ liệu:** ESP32 đọc các giá trị thực (Real), ảo (Imaginary) và nhiệt độ từ cảm biến. Vi điều khiển thực hiện các phép tính toán học để xác định biên độ tổng trở phức `|Z| = sqrt(Real^2 + Imaginary^2)` và góc pha `theta = arctan(Imaginary / Real)`, đồng thời áp dụng hệ số hồi quy tuyến tính để bù trừ triệt để sai số do sự thay đổi nhiệt độ nước gây ra.
   * Dữ liệu sau khi xử lý được đóng gói gọn gàng thành chuỗi bản tin JSON.
 * **Bước 5: Truyền thông MQTT và Giám sát trực quan trên Node-RED**
   * ESP32 đẩy bản tin dữ liệu qua Wi-Fi lên MQTT Broker thông qua các Topic được định nghĩa sẵn.

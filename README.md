@@ -6,8 +6,8 @@ Thiết bị phân tích và giám sát chất lượng nước
 
 ## 2. Vấn đề thực tế và giải pháp
 * **Thực trạng nguồn nước:** Chất lượng nước sinh hoạt tại các khu nhà trọ hoặc nước giếng khoan thường bị lẫn tạp chất, ion kim loại nặng và muối hòa tan làm thay đổi đặc tính điện hóa, gây ảnh hưởng nghiêm trọng đến sức khỏe nhưng rất khó nhận biết bằng mắt thường.
-* **Hạn chế của cảm biến phổ thông:** Các cảm biến đo độ đục (Turbidity) hay cảm biến TDS thông thường chỉ đo giá trị điện trở thuần hoặc độ truyền quang ở một tần số cố định, độ chính xác thấp, dễ bị trôi tuyến tính và hoàn toàn không phản ánh được bản chất phức tạp của dung dịch điện ly.
-* **Giải pháp chuyên sâu:** Đề tài ứng dụng phương pháp **Phổ tổng trở điện hóa (Electrochemical Impedance Spectroscopy - EIS)** bằng phần cứng chuyên dụng giá rẻ. Hệ thống thực hiện quét dải tần số rộng qua mẫu nước, đo đạc đồng thời biên độ và góc pha của tổng trở phức ($\dot{Z} = R + jX$). Từ đó, hệ thống bù trừ sai số do nhiệt độ môi trường và truyền dữ liệu qua MQTT lên Node-RED để dựng đồ thị Bode Plot trực quan từ xa, giúp phân tích chính xác bản chất điện hóa của nguồn nước.
+* **Hạn chế của cảm biến phổ thông:** Các cảm biến đo độ đục hay cảm biến TDS thông thường chỉ đo giá trị điện trở thuần hoặc độ truyền quang ở một tần số cố định, độ chính xác thấp, dễ bị trôi tuyến tính và hoàn toàn không phản ánh được bản chất phức tạp của dung dịch điện ly.
+* **Giải pháp chuyên sâu:** Đề tài ứng dụng phương pháp tính phổ tổng trở điện hóa bằng phần cứng chuyên dụng. Hệ thống thực hiện quét dải tần số rộng qua mẫu nước, đo đạc đồng thời biên độ và góc pha của tổng trở phức ($\dot{Z} = R + jX$). Từ đó, hệ thống bù trừ sai số do nhiệt độ môi trường và truyền dữ liệu qua MQTT lên Node-RED để dựng đồ thị Bode Plot trực quan từ xa, giúp phân tích chính xác bản chất điện hóa của nguồn nước.
 
 ## 3. Danh mục phần cứng
 * **Vi điều khiển ESP32:** 

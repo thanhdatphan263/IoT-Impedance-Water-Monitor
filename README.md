@@ -91,9 +91,13 @@ Thiết bị phân tích và giám sát chất lượng nước
   
   - ESP32 đẩy bản tin dữ liệu qua Wi-Fi lên MQTT Broker thông qua các Topic được định nghĩa sẵn.
   - Node-RED Dashboard nhận chuỗi dữ liệu, sử dụng các hàm xử lý JavaScript để tách mảng dữ liệu, sau đó vẽ ồ thị biên độ tổng trở và góc pha theo tần số ngay trên giao diện web. Dựa vào hình dạng và độ dịch chuyển của đặc tuyến phổ tổng trở, hệ thống đưa ra cảnh báo nếu nguồn nước xuất hiện bất thường hoặc nhiễm ion lạ.
-    
+
+  ## 6. Lưu đồ thuật toán
+
+  <img width="479" height="527" alt="luu_do_thuat_toan WATERCHECK" src="https://github.com/user-attachments/assets/085674d1-858f-4c87-9a8b-c409db555119" />
+
  
-  ## 6. Tài liệu tham khảo & Datasheet linh kiện
+  ## 7. Tài liệu tham khảo & Datasheet linh kiện
 
 * [ESP32 Technical Reference Manual - Espressif Systems](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)
 * [AD5933 Datasheet (1 MSPS, 12-Bit Impedance Converter Network) - Analog Devices](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5933.pdf)

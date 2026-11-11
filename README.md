@@ -19,6 +19,9 @@ Thiết bị phân tích và giám sát chất lượng nước
   * Cấu hình giao tiếp phần cứng I2C để điều khiển chip AD5933 thực hiện các chu trình quét tần số.
   * Đọc dữ liệu nhiệt độ từ cảm biến DS18B20 để thực hiện thuật toán bù nhiệt phần mềm.
   * Đóng gói dữ liệu thành bản tin JSON và kết nối Wi-Fi truyền tải qua giao thức MQTT.
+
+
+    
 * **IC đo tổng trở chuyên dụng AD5933:**
 
 <img width="166" height="128" alt="ic_ad5933" src="https://github.com/user-attachments/assets/4ce10439-2dc3-495b-8b1d-6d68fd9818f2" />
@@ -26,6 +29,9 @@ Thiết bị phân tích và giám sát chất lượng nước
   
   * Là một hệ thống đo tổng trở tích hợp sẵn bộ phát sóng sin kỹ thuật số và bộ chuyển đổi tương tự - số 12-bit tốc độ 1 MSPS.
   * Có khả năng thực hiện phép biến đổi Fourier rời rạc trực tiếp trên chip ở từng tần số quét, trả về kết quả là các thành phần số phức thực và ảo.
+
+
+    
 * **Mạch khuếch đại thuật toán AD8606:**
 
 <img width="185" height="114" alt="OPAMP_AD8606" src="https://github.com/user-attachments/assets/432a5e2f-75c4-4095-82cf-71c24b05a8b0" />
@@ -33,6 +39,9 @@ Thiết bị phân tích và giám sát chất lượng nước
 
   * Op-amp kép độ chính xác cao, dòng rò cực thấp, hoạt động ở dải điện áp thấp.
   * Đóng vai trò làm mạch đệm, mạch chuyển đổi dòng điện sang điện áp hoặc khuếch đại biên độ tín hiệu phản hồi từ dung dịch nước trước khi đưa vào chân ADC của AD5933, giúp loại bỏ hiện tượng sụt áp và sai số do trở kháng nguồn.
+
+
+    
 * **Cảm biến nhiệt độ nước DS18B20:**
 
 <img width="280" height="242" alt="cam_bien_nhiet_do_nuoc_DS18B20" src="https://github.com/user-attachments/assets/932a9cbb-cb25-4ad4-89b6-f2336b6bd65e" />
@@ -40,12 +49,16 @@ Thiết bị phân tích và giám sát chất lượng nước
 
   * Giao tiếp qua chuẩn 1-Wire, đo nhiệt độ nước thời gian thực. 
   * Cực kỳ quan trọng vì tổng trở của dung dịch điện ly phụ thuộc rất lớn vào nhiệt độ ($R$ giảm khi nhiệt độ tăng). Dữ liệu này dùng để hiệu chuẩn và bù sai số nhiệt độ.
+
+
+    
 * **Giao diện quan sát:**
 
 <img width="262" height="208" alt="MAN_HINH" src="https://github.com/user-attachments/assets/337e4361-1db5-43ed-ad78-7bd6a7f6133d" />
 
 
 * Màn hình giao tiếp I2C hiển thị thông số tổng trở thực tế và trạng thái hoạt động trực tiếp tại thiết bị.
+  
   
 ## 4. Sơ đồ khối kết nối
 
@@ -66,6 +79,7 @@ Thiết bị phân tích và giám sát chất lượng nước
 * **Bước 5: Truyền thông MQTT và Giám sát trực quan trên Node-RED**
   * ESP32 đẩy bản tin dữ liệu qua Wi-Fi lên MQTT Broker thông qua các Topic được định nghĩa sẵn.
   * **Node-RED Dashboard** nhận chuỗi dữ liệu, sử dụng các hàm xử lý JavaScript để tách mảng dữ liệu, sau đó vẽ ồ thị biên độ tổng trở và góc pha theo tần số ngay trên giao diện web. Dựa vào hình dạng và độ dịch chuyển của đặc tuyến phổ tổng trở, hệ thống đưa ra cảnh báo nếu nguồn nước xuất hiện bất thường hoặc nhiễm ion lạ.
+    
  
   ## 6. Tài liệu tham khảo & Datasheet linh kiện
 

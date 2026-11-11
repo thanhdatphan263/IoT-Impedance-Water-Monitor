@@ -65,6 +65,5 @@ Thiết bị phân tích và giám sát chất lượng nước
 * [AD5933 Datasheet (1 MSPS, 12-Bit Impedance Converter Network) - Analog Devices](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5933.pdf)
 * [AD8606 Datasheet (Low Noise, Precision, CMOS Dual Operational Amplifiers) - Analog Devices](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf)
 * [DS18B20 Programmable Resolution 1-Wire Digital Thermometer Datasheet - Maxim Integrated](https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf)
-* [I2C LCD Display Module Technical Specification](https://www.components101.com/modules/i2c-16x2-lcd-module-interfacing-with-arduino)
 * [PubSubClient MQTT Library Documentation](https://github.com/knolleary/pubsubclient)
-* [Node-RED Dashboard Documentation](https://nodered.org/docs/user-interface/)
+

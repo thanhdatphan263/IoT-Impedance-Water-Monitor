@@ -62,7 +62,8 @@ Thiết bị phân tích và giám sát chất lượng nước
   
 ## 4. Sơ đồ khối kết nối
 
-<img width="715" height="379" alt="so_do_impedance" src="https://github.com/user-attachments/assets/8cce80ae-04d1-4653-82a7-f2394e2e8861" />
+<img width="675" height="391" alt="WATER_CHECK_SODOKHOI" src="https://github.com/user-attachments/assets/b7b9125e-a138-41b2-96cb-2bcde43a7f64" />
+
 
 
 ## 5. Nguyên lý hoạt động chi tiết

@@ -18,6 +18,8 @@ Thiết bị phân tích và giám sát chất lượng nước
 | 3 | **Mạch khuếch đại thuật toán AD8606**<br><br><img width="120" src="https://github.com/user-attachments/assets/432a5e2f-75c4-4095-82cf-71c24b05a8b0" /> | 1 | - Op-amp kép độ chính xác cao, dòng rò cực thấp.<br>- Làm mạch đệm, chuyển đổi dòng điện sang điện áp hoặc khuếch đại biên độ tín hiệu phản hồi trước khi đưa vào ADC của AD5933, loại bỏ sụt áp và sai số trở kháng nguồn. |
 | 4 | **Cảm biến nhiệt độ nước DS18B20**<br><br><img width="120" src="https://github.com/user-attachments/assets/932a9cbb-cb25-4ad4-89b6-f2336b6bd65e" /> | 1 | - Giao tiếp chuẩn 1-Wire, đo nhiệt độ nước thời gian thực.<br>- Cung cấp dữ liệu nhiệt độ để hệ thống hiệu chuẩn và bù trừ sai số do sự thay đổi nhiệt độ của dung dịch điện ly. |
 | 5 | **Màn hình OLED 1.3 inch**<br><br><img width="120" src="https://github.com/user-attachments/assets/dd6f8f35-3352-48ca-80f1-c1dc03d46c9e" /> | 1 | - Giao tiếp qua chuẩn I2C.<br>- Hiển thị trực tiếp thông số tổng trở thực tế và trạng thái hoạt động của thiết bị tại chỗ. |
+| 6 | **Đầu điện cực đo tổng trở**<br><br><img width="120" src="https://github.com/user-attachments/assets/a72e21ab-0a83-47d3-9726-de881bdceefb" /> | 1 | - Trực tiếp tiếp xúc với mẫu dung dịch nước.<br>- Nhận tín hiệu kích thích điện áp xoay chiều ($V_{out}$) từ chip AD5933 và dẫn dòng điện phản hồi qua dung dịch để phục vụ việc phân tích phổ tổng trở phức. |
+
   
   
 ## 4. Sơ đồ khối kết nối

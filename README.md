@@ -54,10 +54,10 @@ Thiết bị phân tích và giám sát chất lượng nước
     
 * **Giao diện quan sát:**
 
-<img width="262" height="208" alt="MAN_HINH" src="https://github.com/user-attachments/assets/337e4361-1db5-43ed-ad78-7bd6a7f6133d" />
+<img width="239" height="205" alt="oled_1 3inch" src="https://github.com/user-attachments/assets/dd6f8f35-3352-48ca-80f1-c1dc03d46c9e" />
 
 
-- Màn hình giao tiếp I2C hiển thị thông số tổng trở thực tế và trạng thái hoạt động trực tiếp tại thiết bị.
+- Màn hình oled 1.3 inch giao tiếp I2C hiển thị thông số tổng trở thực tế và trạng thái hoạt động trực tiếp tại thiết bị.
   
   
 ## 4. Sơ đồ khối kết nối

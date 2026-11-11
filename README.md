@@ -80,7 +80,7 @@ Thiết bị phân tích và giám sát chất lượng nước
   - Cùng lúc đó, cảm biến DS18B20 đo chính xác nhiệt độ của mẫu nước tại thời điểm đó.
 
     
-* * **Bước 4: Bù nhiệt và đóng gói dữ liệu:**
+* **Bước 4: Bù nhiệt và đóng gói dữ liệu:**
 
   - ESP32 đọc các giá trị thực (Real), ảo (Imaginary) và nhiệt độ từ cảm biến. Vi điều khiển thực hiện các phép tính toán học để xác định biên độ tổng trở phức `|Z| = sqrt(Real^2 + Imaginary^2)` và góc pha `theta = arctan(Imaginary / Real)`, đồng thời áp dụng hệ số hồi quy tuyến tính để bù trừ triệt để sai số do sự thay đổi nhiệt độ nước gây ra.
   - Dữ liệu sau khi xử lý được đóng gói gọn gàng thành chuỗi bản tin JSON.

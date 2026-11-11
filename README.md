@@ -74,6 +74,7 @@ Thiết bị phân tích và giám sát chất lượng nước
   
   - Bộ DDS bên trong AD5933 phát ra tín hiệu điện áp xoay chiều hình sin có biên độ cố định để đặt lên hai điện cực ngâm trong mẫu nước. 
   - Dòng điện chạy qua dung dịch nước phụ thuộc vào nồng độ ion và tổng trở phức của mẫu. Op-amp AD8606 đóng vai trò khuếch đại và ổn định dòng điện phản hồi này quay trở lại chân nhận tín hiệu của AD5933.
+    
 * **Bước 3: Xử lý tín hiệu DFT và thu thập dữ liệu**
   
   - Tại mỗi bước tần số trong dải quét, mạch tích hợp thực hiện lấy mẫu tín hiệu và tính toán thuật toán DFT để bóc tách ra hai thành phần: Phần thực và Phần ảo của tổng trở phức.
@@ -88,7 +89,7 @@ Thiết bị phân tích và giám sát chất lượng nước
 * **Bước 5: Truyền thông MQTT và Giám sát trực quan trên Node-RED**
   
   - ESP32 đẩy bản tin dữ liệu qua Wi-Fi lên MQTT Broker thông qua các Topic được định nghĩa sẵn.
-  - **Node-RED Dashboard** nhận chuỗi dữ liệu, sử dụng các hàm xử lý JavaScript để tách mảng dữ liệu, sau đó vẽ ồ thị biên độ tổng trở và góc pha theo tần số ngay trên giao diện web. Dựa vào hình dạng và độ dịch chuyển của đặc tuyến phổ tổng trở, hệ thống đưa ra cảnh báo nếu nguồn nước xuất hiện bất thường hoặc nhiễm ion lạ.
+  - Node-RED Dashboard nhận chuỗi dữ liệu, sử dụng các hàm xử lý JavaScript để tách mảng dữ liệu, sau đó vẽ ồ thị biên độ tổng trở và góc pha theo tần số ngay trên giao diện web. Dựa vào hình dạng và độ dịch chuyển của đặc tuyến phổ tổng trở, hệ thống đưa ra cảnh báo nếu nguồn nước xuất hiện bất thường hoặc nhiễm ion lạ.
     
  
   ## 6. Tài liệu tham khảo & Datasheet linh kiện
